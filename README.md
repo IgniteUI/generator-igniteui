@@ -1,5 +1,7 @@
 # A [Yeoman](http://yeoman.io) Generator for Ignite UI
 
+## THIS IS NOT A PUBLISHED GENERATOR YET. 
+Stay tuned.. ;)
 
 ## Getting Started
 
