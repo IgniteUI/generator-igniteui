@@ -1,0 +1,45 @@
+{
+  "name": "generator-igniteui",
+  "version": "0.1.0",
+  "description": "Generates a simple Web app with the Ignite UI boilerplate (for use with Yeoman).",
+  "keywords": [
+    "yeoman-generator",
+    "ignite ui",
+    "igniteui",
+    "infragistics",
+    "jquery widgets"
+  ],
+  "homepage": "https://github.com/igniteui/generator-igniteui",
+  "bugs": "https://github.com/igniteui/generator-igniteui/issues",
+  "author": {
+    "name": "Igntie UI Team",
+    "email": "igniteui@infragistics.com",
+    "url": "https://igniteui.com"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/igniteui/generator-igniteui.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.14.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
