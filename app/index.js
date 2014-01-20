@@ -38,10 +38,10 @@ IgniteuiGenerator.prototype.askFor = function askFor() {
 
 IgniteuiGenerator.prototype.app = function app() {
   this.mkdir('app');
-  this.mkdir('app/templates');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
+  this.copy('index.html', 'app/index.html');
 };
 
 IgniteuiGenerator.prototype.projectfiles = function projectfiles() {
