@@ -5,46 +5,45 @@ var yeoman = require('yeoman-generator');
 
 
 var IgniteuiGenerator = module.exports = function IgniteuiGenerator(args, options, config) {
-  yeoman.generators.Base.apply(this, arguments);
+	yeoman.generators.Base.apply(this, arguments);
 
-  this.on('end', function () {
-    this.installDependencies({ skipInstall: options['skip-install'] });
-  });
+	// this.on('end', function () {
+	//   this.installDependencies({ skipInstall: options['skip-install'] });
+	// });
 
-  this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
+	// because we use the ES6 delimiters in Ignite UI, we need to disable them from being used in the generator
+	// for more info: https://github.com/lodash/lodash/issues/399
+	this._.templateSettings.interpolate = /<%=([\s\S]+?)%>/g;
+
+	this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 };
 
 util.inherits(IgniteuiGenerator, yeoman.generators.Base);
 
 IgniteuiGenerator.prototype.askFor = function askFor() {
-  var cb = this.async();
+	var cb = this.async();
 
-  // have Yeoman greet the user.
-  console.log(this.yeoman);
+	// have Yeoman greet the user.
+	console.log(this.yeoman);
 
-  var prompts = [{
-    type: 'confirm',
-    name: 'someOption',
-    message: 'Would you like to enable this option?',
-    default: true
-  }];
+	var prompts = [{
+		name: 'pageName',
+		message: 'What do you want the page filename to be (we\'ll add .html extension if you don\'t specify one)?'
+	},
+	{
+		name: 'pageTitle',
+		message: 'What do you want the page title to be?'
+	}];
 
-  this.prompt(prompts, function (props) {
-    this.someOption = props.someOption;
+	this.prompt(prompts, function (props) {
+  		this.pageName = props.pageName;
+  		this.pageTitle = props.pageTitle;
 
-    cb();
-  }.bind(this));
+		cb();
+	}.bind(this));
 };
 
-IgniteuiGenerator.prototype.app = function app() {
-  this.mkdir('app');
-
-  this.copy('_package.json', 'package.json');
-  this.copy('_bower.json', 'bower.json');
-  this.copy('index.html', 'app/index.html');
+IgniteuiGenerator.prototype.page = function() {
+	this.template('_index.html', this.pageName + (this.pageName.indexOf('.') === -1 ? '.html' : ''));
 };
 
-IgniteuiGenerator.prototype.projectfiles = function projectfiles() {
-  this.copy('editorconfig', '.editorconfig');
-  this.copy('jshintrc', '.jshintrc');
-};
