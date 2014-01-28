@@ -1,42 +1,43 @@
 # A [Yeoman](http://yeoman.io) Generator for Ignite UI
 
-## THIS IS NOT A PUBLISHED GENERATOR YET. 
-Stay tuned.. ;)
+## What is Ignite UI?
+![Ignite UI](http://igniteui.com/images/headerIcon.PNG "Ignite UI")
+[Ignite UI](http://igniteui.com/) is an advanced HTML5+ toolset that helps you create stunning, modern Web apps. Building on jQuery and jQuery UI, it primarily consists of feature rich, high-performing UI controls/widgets such as all kinds of charts, data visualization maps, (hierarchical, editable) data grids, pivot grids, enhanced editors (combo box, masked editors, HTML editor, date picker, to name a few), flexible data source connectors, and a whole lot more.  Too many to list here--check out [the site](http://igniteui.com/) for more info and to [download](https://igniteui.com/download).
+
+Ignite UI is not just another library created in someone's free time. It is commercial-ready, extremely well-tested, tuned for top performance, designed for good UX, and backed by a thriving 20+-year-old UI software company, [Infragistics](http://www.infragistics.com/).
+
+## About this Generator
+This is a very basic initial release, but the hope is you'll submit issues with what is important to you to add. Or hey, you know, this is open source, so feel free to submit pull requests with improvements, though you may want to discuss your ideas first in issues. :)
+
+Because Ignite UI is a licensed product, we reference the public/free _trial_ release in the script references. You will want to replace that with your own licensed. I am trying to think of a good way to generate with licensed scripts. If you have ideas for that, please share.
+
+### What You Get
+As of today, all it will do is generate an HTML page in the current directory based on the Ignite UI boilerplate _with a chart and grid sample built in_. This is meant to quickly give you something to modify/build from, or you can just delete it.
+
+This is not a project generator. Ignite UI is not an application framework; it can be used with the popular application frameworks, such as Angular, Ember, Backbone, etc. So I recommend using `yo <yourappframework>` first, then you can use `yo igniteui` to generate a page in your app that uses Ignite UI.
+
+We could theoretically expand to let you pick a popular base framework first, but I'd like to see how important that is to people.
+
 
 ## Getting Started
-
-### What is Yeoman?
-
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
+To use, you have to first install [Yeoman](http://yeoman.io). I highly recommend this tool. You can use it to scaffold your apps and save yourself a lot of trouble.  If you don't have it installed yet, run:
 
 ```
 $ npm install -g yo
 ```
 
-### Yeoman Generators
+### Installing the Ignite UI Generator
 
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-igniteui from npm, run:
-
+Just run:
 ```
 $ npm install -g generator-igniteui
 ```
 
-Finally, initiate the generator:
-
+### Using the Ignite UI Generator
+In the directory that you want to create your page, run: 
 ```
 $ yo igniteui
 ```
 
-### Getting To Know Yeoman
+That's it!  Hope it helps! If you have suggestions, please submit issues here.
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
-
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
