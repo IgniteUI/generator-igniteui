@@ -29,15 +29,10 @@ IgniteuiGenerator.prototype.askFor = function askFor() {
 	var prompts = [{
 		name: 'pageName',
 		message: 'What do you want the page filename to be (we\'ll add .html extension if you don\'t specify one)?'
-	},
-	{
-		name: 'pageTitle',
-		message: 'What do you want the page title to be?'
 	}];
 
 	this.prompt(prompts, function (props) {
   		this.pageName = props.pageName;
-  		this.pageTitle = props.pageTitle;
 
 		cb();
 	}.bind(this));

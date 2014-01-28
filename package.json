@@ -1,6 +1,6 @@
 {
   "name": "generator-igniteui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generates a simple Web app with the Ignite UI boilerplate (for use with Yeoman).",
   "keywords": [
     "yeoman-generator",
@@ -17,7 +17,7 @@
   "homepage": "https://github.com/igniteui/generator-igniteui",
   "bugs": "https://github.com/igniteui/generator-igniteui/issues",
   "author": {
-    "name": "Igntie UI Team",
+    "name": "Igntie UI",
     "email": "igniteui@infragistics.com",
     "url": "https://igniteui.com"
   },
