@@ -39,5 +39,13 @@ In the directory that you want to create your page, run:
 $ yo igniteui
 ```
 
-That's it!  Hope it helps! If you have suggestions, please [submit issues here](https://github.com/igniteui/generator-igniteui/issues).
+Your new page should look something like this:
+![What You Should See](https://raw2.github.com/IgniteUI/generator-igniteui/master/what-you-should-see.png)
+
+The generated code is decorated with comments to help you tweak it for your purposes.
+
+That's it!  Hope it helps! 
+
+### Suggestions/Issues
+If you have suggestions, please [submit issues here](https://github.com/igniteui/generator-igniteui/issues).
 
