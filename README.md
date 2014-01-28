@@ -39,5 +39,5 @@ In the directory that you want to create your page, run:
 $ yo igniteui
 ```
 
-That's it!  Hope it helps! If you have suggestions, please submit issues here.
+That's it!  Hope it helps! If you have suggestions, please [submit issues here](https://github.com/igniteui/generator-igniteui/issues).
 
