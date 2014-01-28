@@ -7,7 +7,12 @@
     "ignite ui",
     "igniteui",
     "infragistics",
-    "jquery widgets"
+    "jquery widgets",
+    "data visualization",
+    "data grids",
+    "charts",
+    "graphs",
+    "jquery controls"
   ],
   "homepage": "https://github.com/igniteui/generator-igniteui",
   "bugs": "https://github.com/igniteui/generator-igniteui/issues",
