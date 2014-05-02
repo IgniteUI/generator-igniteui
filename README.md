@@ -40,7 +40,7 @@ $ yo igniteui
 ```
 
 Your new page should look something like this:
-![What You Should See](https://raw2.github.com/IgniteUI/generator-igniteui/master/what-you-should-see.png)
+![What You Should See](http://raw.github.com/IgniteUI/generator-igniteui/master/what-you-should-see.png)
 
 The generated code is decorated with comments to help you tweak it for your purposes.
 
