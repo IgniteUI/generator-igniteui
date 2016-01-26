@@ -1,4 +1,5 @@
 lib-cov
+.git*
 *.seed
 *.log
 *.csv
@@ -6,7 +7,7 @@ lib-cov
 *.out
 *.pid
 *.gz
-
+.*
 pids
 logs
 results
