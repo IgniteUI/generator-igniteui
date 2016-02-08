@@ -1,0 +1,70 @@
+<script>
+		$(function () {
+			/* JavaScript in this function will be executed on jQuery Document Ready event.
+			Learn more about this event: http://learn.jquery.com/using-jquery-core/document-ready  */
+
+
+			// --- BEGIN SAMPLE SCRIPT YOU CAN REMOVE OR MODIFY --- //
+
+			/* Code in this block is here only to provide sample usage of Ignite UI.
+			Feel free to remove or modify however you like. */
+
+			// Sample Data
+			var populationData = [
+				{ "CountryName": "China", "1995": 1216, "2005": 1303, "2015": 1361, "2025": 1394 },
+				{ "CountryName": "India", "1995": 920, "2005": 1127, "2015": 1251, "2025": 1396 },
+				{ "CountryName": "United States", "1995": 266, "2005": 296, "2015": 322, "2025": 351 },
+				{ "CountryName": "Indonesia", "1995": 197, "2005": 224, "2015": 256, "2025": 277 },
+				{ "CountryName": "Brazil", "1995": 161, "2005": 186, "2015": 204, "2025": 218 },
+				{ "CountryName": "Russian Federation", "1995": 148, "2005": 143, "2015": 141, "2025": 137 },
+				{ "CountryName": "Pakistan", "1995": 127, "2005": 158, "2015": 178, "2025": 198 },
+				{ "CountryName": "Japan", "1995": 124, "2005": 128, "2015": 132, "2025": 136 },
+				{ "CountryName": "Bangladesh", "1995": 117, "2005": 143, "2015": 168, "2025": 196 },
+				{ "CountryName": "Nigeria", "1995": 105, "2005": 140, "2015": 174, "2025": 201 },
+				{ "CountryName": "Mexico", "1995": 94, "2005": 111, "2015": 128, "2025": 145 },
+				{ "CountryName": "Germany", "1995": 81, "2005": 82, "2015": 83, "2025": 85 },
+				{ "CountryName": "Vietnam", "1995": 71, "2005": 82, "2015": 94, "2025": 106 }
+			];
+
+			// Sample Ignite UI Data Grid
+			$("#igniteGrid").igGrid({
+				width: "100%",
+				dataSource: populationData,
+				autoGenerateColumns: false,
+				columns: [{
+					key: "CountryName",
+					headerText: "Country",
+					dataType: "string",
+					width: "33.33%"
+				}, {
+					key: "2005",
+					headerText: "2005",
+					dataType: "number",
+					width: "33.33%"
+				}, {
+					key: "2015",
+					headerText: "2015",
+					dataType: "number",
+					width: "33.33%"
+				}],
+				features: [{
+					name: "Sorting",
+					columnSettings: [{
+						columnKey: "2015",
+						currentSortDirection: "descending"
+					}]
+				},
+				{
+					name: "Filtering",
+					type: "local",
+					mode: "simple"
+				},
+				{
+					name: "Paging",
+					type: "local",
+					pageSize: 5
+				}]
+			});
+            // --- END SAMPLE SCRIPT YOU CAN REMOVE OR MODIFY --- //
+        });
+	</script>

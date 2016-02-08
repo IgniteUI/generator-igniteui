@@ -16,6 +16,7 @@
     ""
   ],
   "dependencies": {
+    "cheerio": "^0.20.0",
     "yeoman-generator": "^0.22.5",
     "yosay": "^1.1.0"
   }
